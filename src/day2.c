@@ -15,8 +15,7 @@ int main() {
     }
 
     // lol hard coded solution
-    while ( ! feof(f) ) {
-        fgets(choices, 4, f);
+    while ( fgets(choices, 4, f) ) {
         if( ! strcmp(choices, "A X")) sum += 4;
         else if ( ! strcmp(choices, "A Y")) sum += 8;
         else if ( ! strcmp(choices, "A Z")) sum += 3;

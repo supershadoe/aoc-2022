@@ -16,8 +16,7 @@ int main() {
         perror("Cannot open ./input/day1.txt");
         return errno;
     }
-    while ( ! feof(f) ) {
-        fgets(calories, 20, f);
+    while ( fgets(calories, 20, f) ) {
         if (calories[0] != '\n') {
             sscanf(calories, "%d", &cal);
             elf[0][1] += cal;
