@@ -20,9 +20,9 @@ int main() {
         match = strpbrk(first_half, sec_half);
         if (match != NULL)
             if (*match >= 'A' && *match <= 'Z')
-                sum += (int) *match - 38;
+                sum += *match - 38;
             else if (*match >= 'a' && *match <= 'z')
-                sum += (int) *match - 96;
+                sum += *match - 96;
             else
                 printf("Invalid input.\n"); // never executed
     }
